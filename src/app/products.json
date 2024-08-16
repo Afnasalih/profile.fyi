@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Apple Series 7",
+        "price": 99.99,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOs0Ee2UM2pSdlKR-dLp0seRHomx0UnPIj_w&s"
+    },
+    {
+        "id": 2,
+        "name": "Sumsung",
+        "price": 89,
+        "image": "https://www.aptronixindia.com/media/catalog/product/w/a/watch_series_8_lte_41mm_gold_stainless_steel_starlight_sport_band.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Tissot",
+        "price": 294.9,
+        "image": "https://static.helioswatchstore.com/media/easyslide/TB-2_1.webp"
+    },
+    {
+        "id": 4,
+        "name": "Mikado",
+        "price": 70,
+        "image": "https://img0.junaroad.com/uiproducts/18689620/zoom_0-1669009918.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Titan",
+        "price": 129.99,
+        "image": "https://www.titan.co.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Sites-titan-master-catalog/default/dw7646cf71/images/Titan/Catalog/90140QM03_1.jpg?sw=800&sh=800"
+    },
+    {
+        "id": 6,
+        "name": "Rolex",
+        "price": 829.99,
+        "image": "https://img0.junaroad.com/uiproducts/18689620/zoom_0-1669009918.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Boat",
+        "price": 29,
+        "image": "https://static.helioswatchstore.com/media/easyslide/TB-2_1.webp"
+    },
+    {
+        "id": 8,
+        "name": "Casio",
+        "price": 120,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOs0Ee2UM2pSdlKR-dLp0seRHomx0UnPIj_w&s"
+    },
+    {
+        "id": 9,
+        "name": "Rolex Limited Edition",
+        "price": 2329.99,
+        "image": "https://www.titan.co.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Sites-titan-master-catalog/default/dw7646cf71/images/Titan/Catalog/90140QM03_1.jpg?sw=800&sh=800"
+    },
+    {
+        "id": 10,
+        "name": "Armani",
+        "price": 300,
+        "image": "https://img0.junaroad.com/uiproducts/18689620/zoom_0-1669009918.jpg"
+    }
+]
