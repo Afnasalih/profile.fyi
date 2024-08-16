@@ -78,7 +78,7 @@ const CartPage = ({ cart, setCart }) => {
                 </div>
                 <button
                   onClick={() => removeItem(index)}
-                  className="ml-4 text-red-500 hover:text-red-700"
+                  className="text-sm md:text-md ml-4 text-red-500 hover:text-red-700"
                 >
                   Remove
                 </button>
