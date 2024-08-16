@@ -53,7 +53,7 @@ const CartPage = ({ cart, setCart }) => {
               <div key={index} className="border-b py-4 flex items-center justify-between">
                 <img src={product.image} alt={product.name} className="w-16 h-16 object-cover mr-4" />
                 <div>
-                  <h3 className="text-lg font-bold">{product.name}</h3>
+                  <h3 className="text-sm md:text-lg font-bold">{product.name}</h3>
                   <p className="text-gray-700">${product.price.toFixed(2)}</p>
                 </div>
                 <div className="flex items-center">
