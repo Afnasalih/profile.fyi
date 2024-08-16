@@ -28,7 +28,7 @@ export default function Home() {
   return (
     <div>
       <header className="flex justify-between items-center p-9 bg-blue-800 text-white">
-        <h1 className="lg:text-2xl sm:text-lg text-sm font-bold">E-commerce Website - ( NextJS & Tailwindcss )</h1>
+        <h1 className="lg:text-2xl sm:text-lg text-sm font-bold">E-commerce Website</h1>
         <button
           onClick={handleToggleCart}
           className="bg-blue-500 px-4 py-2 rounded hover:bg-blue-600"
