@@ -7,11 +7,21 @@ import Link from 'next/link';
 const CartPage = ({ cart, setCart }) => {
   const [discount, setDiscount] = useState(0);
   const [discountType, setDiscountType] = useState('fixed');
+  const [error, setError] = useState('');
   const router = useRouter();
 
   const handleQuantityChange = (index, amount) => {
     const updatedCart = [...cart];
-    updatedCart[index].quantity = Math.max(1, updatedCart[index].quantity + amount);
+    const newQuantity = updatedCart[index].quantity + amount;
+
+    
+    if (newQuantity <= 0) {
+      setError('Quantity cannot be less than 1.');
+      return;
+    }
+
+    setError(''); 
+    updatedCart[index].quantity = newQuantity;
     setCart(updatedCart);
   };
 
@@ -29,12 +39,7 @@ const CartPage = ({ cart, setCart }) => {
   const discountAmount = discountType === 'percentage' ? (subtotal * (discount / 100)) : discount;
   const total = Math.max(subtotal - discountAmount, 0);
 
-  const handleCheckout = () => {
-    const user = localStorage.getItem('user');
-    if (user) {
-      router.push('/login');
-    } 
-  };
+  
 
   return (
     <div className='p-10'>
@@ -79,6 +84,7 @@ const CartPage = ({ cart, setCart }) => {
                 </button>
               </div>
             ))}
+            {error && <p className="text-red-500 mt-2">{error}</p>}
           </div>
 
           <div className="p-4 border rounded-lg shadow-lg">
@@ -111,19 +117,17 @@ const CartPage = ({ cart, setCart }) => {
                 >
                   10% off
                 </button>
-                
               </div>
               <p className='text-sm'>apply discount coupons</p>
             </div>
-            <Link href="/checkout">
-            <button
-              // onClick={handleCheckout}
-              className="bg-green-500 text-white px-4 py-2 rounded mt-4 hover:bg-green-600"
-            >
-              Proceed to Checkout
-            </button>
-            </Link>
-            
+
+            <a href="/login">
+              <button
+                className="bg-green-500 text-white px-4 py-2 rounded mt-4 hover:bg-green-600"
+              >
+                Proceed to Checkout
+              </button>
+            </a>
           </div>
         </div>
       )}
@@ -132,5 +136,7 @@ const CartPage = ({ cart, setCart }) => {
 };
 
 export default CartPage;
+
+
 
 
