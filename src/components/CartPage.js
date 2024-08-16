@@ -118,7 +118,7 @@ const CartPage = ({ cart, setCart }) => {
                   10% off
                 </button>
               </div>
-              <p className='text-sm'>apply discount coupons</p>
+              <p className='text-sm'>choose the above coupons and apply</p>
             </div>
 
             <a href="/login">
