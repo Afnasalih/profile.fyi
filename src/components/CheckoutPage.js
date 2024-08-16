@@ -6,12 +6,12 @@ import { useRouter } from 'next/navigation';
 export default function CheckoutPage() {
   const router = useRouter();
 
-  useEffect(() => {
-    const isLoggedIn = localStorage.getItem('isLoggedIn');
-    if (!isLoggedIn) {
-      router.push('/login');
-    }
-  }, [router]);
+  // useEffect(() => {
+  //   const isLoggedIn = localStorage.getItem('isLoggedIn');
+  //   if (!isLoggedIn) {
+  //     router.push('/login');
+  //   }
+  // }, [router]);
 
   return (
     <div className="text-center p-6">
